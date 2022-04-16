@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSans-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSans-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Generic */
+html, body {
+    background-color: white;
+    font-family: Raleway, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: OpenSans, sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.flex-item {
+    flex-grow: 1;
+}
+
+.centered-text-box {
+    margin: 20px 20px;
+    text-align: center;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    float: left;
+    width: 20%;
+    margin: 13px 0 0 0;
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+
+.menu a {
+    padding: 8px;
+    margin: 7px;
+    display: block;
+    width: 100%;
+}
+
+.navlink:hover, .current {
+    color: steelblue;
+}
+
+/* Main content */
+.main {
+    float: right;
+    width: 80%;
+    padding: 30px 100px 0 20px;
+}
+
+.photo {
+    margin: 20px 0 100px 0
+}
+
+.caption {
+    font-style: italic;
+    text-align: right;
+}
+
+/* Forms */
+.form {
+    width: 80%;
+}
+
+.form-error {
+    color: indianred;
+}
+
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: steelblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: medium;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Search bar */
+.search-bar-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0 40px 0;
+}
+
+.search-bar {
+    display: flex;
+    width: 50%;
+}
+
+.search-bar input[type=text] {
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0 20px;
+    margin: 0 40px 0 0;
+    height: 40px;
+}
+
+.search-bar button {
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0 20px;
+    margin: 0 0 0 20px;
+    width: auto;
+    height: 40px;
+}
+
+/* Users list */
+.users-container {
+    margin: 20px 0 20px 0;
+}
+
+.user {
+    border: 1px solid darkgrey;
+    margin: 20px 0 20px 0;
+    padding: 0 20px 0 20px;
+}
+
+/* Page turner */
+.page-turn {
+    width: 100%;
+
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: small;
+    margin: 50px 0 50px 0;
+    color: dimgrey;
+}
+
+.footer hr {
+    width: 90%;
+    height: 1px;
+    border-width: 0;
+    color: lightgrey;
+    background-color: lightgrey
+}
+
+/* Mobile */
+@media only screen and (max-width: 1100px) {
+    .menu {
+        position: static;
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
+        padding: 20px 20px 0 20px;
+    }
+
+}
