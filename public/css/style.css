@@ -54,12 +54,19 @@ img {
     text-align: center;
 }
 
+/* Content grid */
+.main-content-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 10px;
+}
+
 /* Menu */
 .menu {
-    position: fixed;
-    float: left;
-    width: 20%;
-    margin: 13px 0 0 0;
+    align-self: start;
+    position: sticky;
+    top: 0;
+    margin: 0;
     padding: 0 20px 0 20px;
     text-align: center;
 }
@@ -77,18 +84,7 @@ img {
 
 /* Main content */
 .main {
-    float: right;
-    width: 80%;
     padding: 30px 100px 0 20px;
-}
-
-.photo {
-    margin: 20px 0 100px 0
-}
-
-.caption {
-    font-style: italic;
-    text-align: right;
 }
 
 /* Forms */
@@ -117,6 +113,8 @@ button {
     border: none;
     cursor: pointer;
     width: 50%;
+    min-width: min-content;
+    max-width: 300px;
     font-family: Raleway, Arial, sans-serif;
     font-size: medium;
 }
@@ -168,9 +166,7 @@ button:hover {
 /* Page turner */
 .page-turn {
     width: 100%;
-
 }
-
 
 /* Footer */
 .footer {
@@ -186,18 +182,4 @@ button:hover {
     border-width: 0;
     color: lightgrey;
     background-color: lightgrey
-}
-
-/* Mobile */
-@media only screen and (max-width: 1100px) {
-    .menu {
-        position: static;
-        width: 100%;
-    }
-
-    .main {
-        width: 100%;
-        padding: 20px 20px 0 20px;
-    }
-
 }

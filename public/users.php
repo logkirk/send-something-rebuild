@@ -6,7 +6,7 @@ require_login($logged_in);
 <html lang="en">
 <?php require_once 'include/doc-head.php' ?>
 <body>
-<div style="overflow:auto">
+<div class="main-content-container">
     <?php include_once 'include/header.php' ?>
     <div class="main">
         <h2>Address Book</h2>
